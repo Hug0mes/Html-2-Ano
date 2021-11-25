@@ -1,113 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+  <html lang="pt-pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apresentação</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-   
+    <script src="script.js"> </script>  
     
-
-<h1 style="size: 17px;" align="center" > &nbsp &nbsp  A minha Apresentação </h1>
-  </head>
-
-
-
- 
+</head>
 <body >
-
   
+<div class="container">
 
- <script>
+  <nav> 
+    <img  id="myImage" src="https://avatars.githubusercontent.com/u/79423600?v=4" class= "logo">
+    <ul>
+    <li><a href="file:///C:/Users/35192/Desktop/TGPSI/Html_2%C2%BAano/Apresenta%C3%A7%C3%A3o.html">Pagina inicial</a></li> 
+    <li><a href="https://gustaveeiffel.pt">Creditos</a></li> 
+    <li>  <a href=""> </a></li> 
+  </ul>
+</nav>
 
-    function light(sw) {
-      var pic; 
-        if (sw == 1) {
-          pic = "https://pbs.twimg.com/profile_images/1290621444670488576/RW4Lr7Y0_400x400.jpg"
+<div class="text-box">
+<p>Eu sou o </p>
+<h1>HUGO</h1>
+<h3>Programador Junior...</h3>
+<a href=""></a>
+</div>
 
-        } else if(sw == 2) {
-          pic = "https://pbs.twimg.com/profile_images/1433212530957094919/wMdQ6mD0_400x400.jpg"
-        
-        } else if(sw == 3) {
-          pic = "https://pbs.twimg.com/profile_images/1421201342077579268/LyjPjcJl_400x400.jpg"
+</div>
 
-        } else if(sw == 4) {
-          pic = "https://pbs.twimg.com/profile_images/1392607468350488584/Teu4n6r7_400x400.jpg"
-        }
-        else {
-          pic = "https://avatars.githubusercontent.com/u/79423600?v=4"
-        }
-      document.getElementById('myImage').src = pic;
-                       }
- </script>
- 
-
-<p>
-      <img id="myImage" src="https://avatars.githubusercontent.com/u/79423600?v=4" width="115" height="115" style="border-radius: 50%"; align="left">
-      &nbsp Eu sou o Hugo, um aspirante a programador. <br>
-      &nbsp Ainda a aprender Visual Basic, C#, C++, Git, Java... 
-</p>
-        
-
-<h4>Lista de discoplinas que mais gosto</h4>
-        <Table>
-
-    <tr>
-      <td>1º</td>
-      <td>Programação</td>
-    </tr>
-    <tr>
-      <td>2º</td>
-      <td>Educação Fisica</td>
-    </tr>
-    <tr>
-      <td>3º</td>
-      <td>Rc</td>
-      
-    </tr>
-    <tr>
-  
-      <td>4º</td>
-      <td>SO</td>
-    
-    </tr>
-    <tr>
-  
-      <td>5º</td>
-      <td>Portugues</td>
-      
-    </tr>
-      </Table>
+<div class="snd">
+<!-- parte em branco(azul), abaixo do inicio-->
+<div class="content">
+<p></p>
+<h1>A escola <span>acaba</span> em...</h1>
+<button type="button">saiba mais</button>
 
 
 
+<form id="register-form"> 
+  <input id="name" type="text" placeholder="Name" value=""/>
+  <input id="pw" type="password" placeholder="Password" value=""/>
+  <input id="rgstr_btn" type="submit" value="registar" onClick="store()"/> 
+</form>
 
-  <h3 align="center">Escolha o seu avatar</h3>
+<form id="login-form"> 
+  <input id="userName" type="text" placeholder="Enter Username" value=""/>
+  <input id="userPw" type="password" placeholder="Enter Password" value=""/>
+  <input id="login_btn" type="submit" value="Login" onClick="check()"/> 
+</form>
 
- 
-    <p align="center">
-    <button class="btn" type="button" onclick="light(0)">Defult</button>
-    <button class="btn" type="button" onclick="light(1)">Simp</button>
+</div>
+</div>
+
+<footer>
+<div class="footer_info">
+<h3 >Escolha o seu avatar</h3>
+
+ &nbsp; &nbsp; &nbsp;
+
+    <p>
+    <button class="btn" type="button" onclick="light(0)">Default</button>
+    <button class="btn" type="button" onclick="light(1)"> 🌨️ </button>
     <button class="btn" type="button" onclick="light(2)">Garanhão</button>
     <button class="btn" type="button" onclick="light(3)">Rei_Delas</button>
     <button class="btn" type="button" onclick="light(4)">Barriga.danone</button>
     </p>
 
-
-              <div align="right" style="color:blue;" >
-                  <a href="https://github.com/Hug0mes" target="_blank" style="color: rgb(56, 97, 124);">Visite o meu github</a>
-                  <br>
-                  <a href="https://www.instagram.com/hug0mes/" target="_blank" style="color: rgb(56, 97, 124);">Visite o meu instagram</a>
-                  <br>
-                  <a href="https://twitter.com/Hugomes05" target="_blank" style="color: rgb(56, 97, 124);">Visite o meu Twitter</a>
-                  <br>
-                  </div>
-
-                 
+    <nav>
+    <a href="https://github.com/Hug0mes" target="_blank"  >  <img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/github_alt_macos_bigsur_icon_190138.png" alt="">  </a>
+    <br>
+    <a href="https://www.instagram.com/hug0mes/" target="_blank"> <img src="https://cdn.icon-icons.com/icons2/1269/PNG/128/1497553304-104_84834.png" alt=""></a>
+    <br>
+    <a href="https://twitter.com/Hugomes05" target="_blank" ><img src="https://cdn.icon-icons.com/icons2/1269/PNG/128/1497553284-112_84835.png" alt=""></a>
+    <br>
+    </nav>
     
+</div>
 
+</footer>
 
 </body>
 </html>
