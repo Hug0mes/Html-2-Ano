@@ -22,7 +22,7 @@
 
 
 
-
+                       
 // storing input from register-form
 function store() {
   
@@ -55,3 +55,69 @@ function check() {
 }
 
                         
+function register() {
+  alert("Register button pressed");
+
+  var username = document.getElementById("Username").value;
+  var email = document.getElementById("Email").value;
+  var password = document.getElementById("Password").value;
+  var Rpassword = document.getElementById("Rpassword").value;
+  var birthday = document.getElementById("Birthday").value;
+
+  console.log(username);
+
+  fetch('http://192.168.123.204:8000/api/register', {
+      method: 'post',
+      headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          username: username,
+          email: email,
+          password: password,
+          birthdate: birthday
+      })
+  }).then(res => res.json())
+      .then(res => checkRegister(res));
+
+}
+ 
+function checkRegister(res){
+    console.log(res);
+    if (res.message == "CREATED"){
+        alert("Conta criada com sucesso!");
+    }else{
+        alert("Erro");
+    }
+}
+
+function Login() {
+  alert("Register button pressed");
+
+  var username = document.getElementById("Username").value;
+  var password = document.getElementById("Password").value;
+
+  console.log(username);
+
+  fetch('http://192.168.123.204:8000/api/login', {
+      method: 'post',
+      headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+
+          username: username,
+          password: password,
+       
+      })
+  }).then(res => res.json())
+      .then(res => console.log(res));
+}
+
+function counter(x){
+  x = 1
+  h1.text(x)
+  x = x +1;
+  }
